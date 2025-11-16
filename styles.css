@@ -87,3 +87,8 @@ a[href$=".com"] {
   color: darkgreen;
   text-decoration: underline dotted;
 }
+
+/* TABLE */
+tr[class='read']{
+    background-image: linear-gradient(to right, navy, blue);
+}
