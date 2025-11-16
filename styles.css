@@ -69,3 +69,21 @@ a[title]{
     font-weight: bold;
     text-decoration: none;
 }
+
+/* target a class containing primary */
+a[class~="primary"] {
+  color: red;
+  font-weight: bold;
+}
+
+/* target a prefixed  */
+a[href^="https://"] {
+  color: green;
+  text-decoration: underline;
+}
+
+/* target suffixed */
+a[href$=".com"] {
+  color: darkgreen;
+  text-decoration: underline dotted;
+}
