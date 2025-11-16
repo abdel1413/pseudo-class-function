@@ -54,3 +54,18 @@ li::marker{
     font-size: 1.5em;
     font-weight: bold;
 }
+
+a{
+    display: block;
+}
+
+a[href]{
+    color: blue;
+    text-decoration: underline;
+}
+
+a[title]{
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
