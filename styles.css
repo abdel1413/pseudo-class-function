@@ -1,0 +1,50 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+.cta-button{
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px 30px;
+    position: relative;
+    border: 2px solid lightseagreen;
+    cursor: pointer;
+}
+
+.cta-button::before{
+    content: " ⭐ ";
+    position: absolute;
+    top: 9px ;
+    left: 5px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover::before{
+   transform: scale(1.2);
+}
+
+.cta-button::after{
+    content: '➡️';
+    position: absolute;
+    top: 8px;
+    left: 105px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover::after{
+    transform: translateX(4px);
+}
+
+.first-letter::first-letter{
+    font-size: 2.5em;
+    color: blue;
+      text-transform: uppercase;
+
+}
