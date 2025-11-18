@@ -92,3 +92,38 @@ a[href$=".com"] {
 tr[class='read']{
     background-image: linear-gradient(to right, navy, blue);
 }
+
+
+tr[class='to-read']{
+background-image:linear-gradient(to right,#E3ECE3,#E3ECE3);
+}
+
+tr[class='in-progress']{
+background-image:linear-gradient(to right,#FFE2AA,#FFE2AA);
+}
+
+span{
+  display:inline-block;
+
+}
+
+ tr[class='to-read'] span[class='status']{
+  border: 2px solid blue;
+  background-image: linear-gradient(to right, green, lightgreen);
+
+}
+tr[class='read'] span[class='status']{
+  border: 2px solid red;
+  background-image: linear-gradient(to right, yellow, yellowgreen);
+}
+
+tr[class='in-progress'] span[class='status']{
+  border: 2px solid orange;
+  background-image: linear-gradient(to right, orange,gold)
+}
+
+span[class='status'] span[class^='rate']{
+  height: 50px;
+  width: 60px;
+  padding: 2px 5px;
+}
