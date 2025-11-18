@@ -89,10 +89,10 @@ a[href$=".com"] {
 }
 
 /* TABLE */
-tr[class='read']{
-    background-image: linear-gradient(to right, navy, blue);
-}
 
+tr[class='read']{
+  background-image: linear-gradient(to right ,#B3FFAF, #B2FFAF);
+}
 
 tr[class='to-read']{
 background-image:linear-gradient(to right,#E3ECE3,#E3ECE3);
@@ -122,9 +122,9 @@ tr[class='in-progress'] span[class='status']{
   background-image: linear-gradient(to right, orange,gold)
 }
 
-span[class='status'] span[class^='rate']{
+span[class='status'] ,span[class^='rate']{
   height: 50px;
-  width: 60px;
+  width: 80px;
   padding: 2px 5px;
 }
 
@@ -137,6 +137,13 @@ span[class^='rate'] >span{
    background-color: blue;
    
 }
-span[class*='word']:nth-child(1){
-  background-color: red;
+span[class~='one'] :nth-child(1){
+  background-image: linear-gradient(to right, yellowgreen, orange);
+}
+span[class~='two'] :nth-child(-n +2){
+  background-image: linear-gradient(to right, blue, navy);
+
+}
+span[class~='three'] span{
+  background-image: linear-gradient(to right, green, lightgreen)
 }
