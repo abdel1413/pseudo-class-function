@@ -89,9 +89,52 @@ a[href$=".com"] {
 }
 
 /* TABLE */
+table th{
+    background-image: linear-gradient(to bottom, blue, skyblue);
+    padding: 7px 5px ;
+    color: white
+}
 
-tr[class='read']{
-  background-image: linear-gradient(to right ,#B3FFAF, #B2FFAF);
+ table tr[class~='row-1']{
+  background-image: linear-gradient(to bottom ,#7be876,#93c190 );
+  padding: 0;
+}
+ table tr[class~='row-2']{
+  background-image: linear-gradient(to bottom ,#a3aca3,#DFEADF );
+  padding: 0;
+}
+ table tr[class~='row-3']{
+  background-image: linear-gradient(to bottom ,#B5FFB3,#DFEADF );
+  padding: 0;
+}
+ table tr[class~='row-4']{
+  background-image: linear-gradient(to bottom ,#B5FFB3,#DFEADF );
+  padding: 0;
+}
+ table tr[class~='row-5']{
+  background-image: linear-gradient(to bottom ,#FFE2AB,#DFEADF );
+  padding: 0;
+}
+ table tr[class~='row-6']{
+  background-image: linear-gradient(to bottom ,#B5FFB3,#DFEADF );
+  padding: 0;
+ 
+}
+table tr{
+    padding : 0;
+    margin: 2px
+    font-size: .5em
+}
+table tr td{
+    padding: 0;
+    
+}
+
+
+
+span[class='status']{
+    border :2px solid red;
+    padding: 0;
 }
 
 tr[class='to-read']{
