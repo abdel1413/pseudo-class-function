@@ -122,24 +122,55 @@ table th{
 }
 table tr{
     padding : 0;
-    margin: 2px
-    font-size: .5em
+    margin: 2px;
+   
 }
-table tr td{
-    padding: 0;
-    
+ td{
+    padding: 0.3em 3em;
+
+   
 }
 
 
 
 span[class='status']{
     border :2px solid red;
-    padding: 0;
+   padding: 4px 20px;
+    border-radius: 15px;
+   
+   
+ 
 }
+
+span[class~='re-read']{
+    border: 1px solid green;
+    padding: 5px 15px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+span[class~='to--read']{
+    border: 1px solid gray;
+    padding: 5px 15px;
+    width: 100%;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, rgb(180, 171, 171), lightgray);
+
+}
+span[class~='progress']{
+    border: 1px solid #eaaf3b;
+    padding: 5px 15px;
+    width: 100%;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom, #eaaf3b, #b6a37d);
+
+}
+
 
 tr[class='to-read']{
 background-image:linear-gradient(to right,#E3ECE3,#E3ECE3);
 }
+
 
 tr[class='in-progress']{
 background-image:linear-gradient(to right,#FFE2AA,#FFE2AA);
@@ -148,9 +179,10 @@ background-image:linear-gradient(to right,#FFE2AA,#FFE2AA);
 span{
   display:inline-block;
 
+
 }
 
- tr[class='to-read'] span[class='status']{
+ /* tr[class='to-read'] span[class='status']{
   border: 2px solid blue;
   background-image: linear-gradient(to right, green, lightgreen);
 
@@ -189,4 +221,4 @@ span[class~='two'] :nth-child(-n +2){
 }
 span[class~='three'] span{
   background-image: linear-gradient(to right, green, lightgreen)
-}
+} */
