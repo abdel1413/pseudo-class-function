@@ -133,13 +133,9 @@ table tr{
 
 
 
-span[class='status']{
-    
+span[class='status']{ 
    padding: 4px 20px;
-    border-radius: 15px;
-   
-   
- 
+    border-radius: 15px; 
 }
 
 span[class~='re-read']{
@@ -189,10 +185,7 @@ span[class^='rate'] >span{
    width: 17px;
    border: 2px solid green;
    margin-right: 5px;
-   background-image: linear-gradient(to bottom, white, white);
-  
-   
-}
+   background-image: linear-gradient(to bottom, white, white);}
 
 
 span[class~='one'] :nth-child(1){
